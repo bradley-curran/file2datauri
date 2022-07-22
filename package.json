@@ -1,0 +1,18 @@
+{
+  "name": "",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon --exec './build.sh && node --enable-source-maps .'",
+    "build": "./build.sh"
+  },
+  "bin": {
+  },
+  "devDependencies": {
+    "@types/node": "^18.0.1",
+    "esbuild": "^0.14.48",
+    "nodemon": "^2.0.18",
+    "prettier": "^2.7.1",
+    "typescript": "^4.7.4"
+  }
+}
