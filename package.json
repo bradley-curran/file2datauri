@@ -9,7 +9,12 @@
   "bin": {
     "file2datauri": "./index.js"
   },
+  "dependencies": {
+    "file-type": "^16.5.4",
+    "minimist": "^1.2.6"
+  },
   "devDependencies": {
+    "@types/minimist": "^1.2.2",
     "@types/node": "^18.0.1",
     "esbuild": "^0.14.48",
     "nodemon": "^2.0.18",

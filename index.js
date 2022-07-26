@@ -1,3 +1,3 @@
 #!/usr/bin/env node
-"use strict";console.log("hello world");
+"use strict";var i=require("./node_modules/file-type/index.js"),c=require("fs"),f=require("./node_modules/minimist/index.js"),a=f(process.argv.slice(2)),m=r=>new Promise((t,n)=>{let o=[];r.on("data",e=>o.push(e)),r.on("end",()=>t(Buffer.concat(o))),r.on("error",e=>n(e))}),u=async r=>{let t=await(0,i.fromBuffer)(r);return t&&t.mime},d=async(r,t)=>{let n=r?(0,c.createReadStream)(r):process.stdin,o=await m(n),e=t||await u(o),s=o.toString("base64");return e?`data:${e};base64,${s}`:`data:;base64,${s}`};d(a.f,a.m).then(r=>console.log(r)).catch(r=>console.log(r));
 //# sourceMappingURL=index.js.map
