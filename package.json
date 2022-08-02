@@ -1,6 +1,23 @@
 {
   "name": "file2datauri",
   "version": "0.2.0",
+  "description": "Converts files and stdin into data URI scheme strings.",
+  "keywords": [
+    "datauri",
+    "data",
+    "uri"
+  ],
+  "homepage": "https://github.com/bradley-curran/file2datauri#readme",
+  "bugs": {
+    "url": "https://github.com/bradley-curran/file2datauri/issues"
+  },
+  "license": "MIT",
+  "contributors": [
+    {
+      "name": "Bradley Curran",
+      "url": "https://bradleycurran.com"
+    }
+  ],
   "main": "index.js",
   "scripts": {
     "start": "nodemon --exec './build.sh && node --enable-source-maps .'",
