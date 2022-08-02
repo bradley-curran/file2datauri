@@ -1,6 +1,6 @@
 {
   "name": "file2datauri",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Converts files and stdin into data URI scheme strings.",
   "keywords": [
     "datauri",
