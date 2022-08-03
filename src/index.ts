@@ -36,4 +36,7 @@ const file2datauri = async (filename?: string, mimeType?: string) => {
 
 file2datauri(argv.f, argv.m)
   .then((a) => console.log(a))
-  .catch((e) => console.log(e));
+  .catch((e) => {
+    console.error(e);
+    process.exit(1);
+  });
